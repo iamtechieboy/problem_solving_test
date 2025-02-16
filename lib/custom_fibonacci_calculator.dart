@@ -1,5 +1,4 @@
 int customFibonacci(int n, int first, int second) {
-
   // Edge cases
   if (n <= 0) return -1;
   if (n == 1) return first;
@@ -9,11 +8,11 @@ int customFibonacci(int n, int first, int second) {
 
   for (int i = 3; i <= n; i++) {
     next = a + b; // Next element
-    a = b;
+    a = b; // Shift a to b
     b = next;
-    print(b);
   }
 
+  // Return the nth custom fibonacci number
   return b;
 }
 
